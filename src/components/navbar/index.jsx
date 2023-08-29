@@ -1,7 +1,11 @@
-import './style.scss';
+import Logo from '../../images/logo/logo.svg';
 
 function Navbar() {
-  return <div className="container"></div>;
+  return (
+    <nav className="container">
+      <img src={Logo} />
+    </nav>
+  );
 }
 
 export default Navbar;
