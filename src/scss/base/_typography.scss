@@ -1,0 +1,64 @@
+$font-path: '../../fonts';
+
+@font-face {
+  src: url('#{$font-path}/Stark.woff2') format('woff2');
+  src: url('#{$font-path}/Staatliches.woff') format('woff1');
+  src: url('#{$font-path}/Staatliches.ttf') format('truetype');
+  font-family: 'Stark';
+}
+
+@font-face {
+  src: url('#{$font-path}/Staatliches.woff2') format('woff2');
+  src: url('#{$font-path}/Staatliches.woff') format('woff');
+  src: url('#{$font-path}/Staatliches.ttf') format('truetype');
+
+  font-family: 'Staatliches';
+}
+
+@font-face {
+  src: url('#{$font-path}/53Dollars-92Cents.woff2') format('woff2');
+  src: url('#{$font-path}/53Dollars-92Cents.woff') format('woff');
+  src: url('#{$font-path}/53Dollars-92Cents.ttf') format('truetype');
+
+  font-family: '53Dollars-92Cents';
+}
+
+@font-face {
+  src: url('#{$font-path}/DMMono-Italic.woff2') format('woff2');
+  src: url('#{$font-path}/DMMono-Italic.woff') format('woff');
+  src: url('#{$font-path}/DMMono-Italic.ttf') format('truetype');
+
+  font-family: 'DMMono Italic';
+}
+
+@font-face {
+  src: url('#{$font-path}/DMMono-Regular.woff2') format('woff2');
+  src: url('#{$font-path}/DMMono-Regular.woff') format('woff');
+  src: url('#{$font-path}/DMMono-Regular.ttf') format('truetype');
+
+  font-family: 'DMMono Regular';
+}
+
+@font-face {
+  src: url('#{$font-path}/Outfit-Light.woff2') format('woff2');
+  src: url('#{$font-path}/Outfit-Light.woff') format('woff');
+  src: url('#{$font-path}/Outfit-Light.ttf') format('truetype');
+
+  font-family: 'Outfit Light';
+}
+
+@font-face {
+  src: url('#{$font-path}/Outfit-Regular.woff2') format('woff2');
+  src: url('#{$font-path}/Outfit-Regular.woff') format('woff');
+  src: url('#{$font-path}/Outfit-Regular.ttf') format('truetype');
+
+  font-family: 'Outfit-Regular';
+}
+
+@font-face {
+  src: url('#{$font-path}/Outfit-Bold.woff2') format('woff2');
+  src: url('#{$font-path}/Outfit-Bold.woff') format('woff');
+  src: url('#{$font-path}/Outfit-Bold.ttf') format('truetype');
+
+  font-family: 'Outfit-Bold';
+}
