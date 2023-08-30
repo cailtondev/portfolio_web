@@ -1,19 +1,18 @@
 'use strict';
 
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/js/main.js',
+  devtool: 'source-map',
+  entry: './src/vendors/bootstrap.js',
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: 'bootstrap-min.js',
+    path: path.resolve(__dirname, './src/js/'),
   },
   devServer: {
-    static: path.resolve(__dirname, 'dist'),
+    static: path.resolve(__dirname, './src/js/'),
     port: 8080,
     hot: true,
   },
-  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
 };

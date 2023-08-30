@@ -17,11 +17,11 @@ module.exports = {
   },
   parser: '@babel/eslint-parser',
   parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 'latest',
-    sourceType: 'module',
   },
   plugins: ['react', 'prettier', 'react-hooks'],
   settings: {

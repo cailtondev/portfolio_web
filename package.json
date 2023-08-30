@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.22.11",
     "@popperjs/core": "^2.11.8",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -15,8 +16,15 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "react-scripts start",
+    "react-build": "react-scripts build",
+    "webpack-build": "webpack build --mode=production",
+    "webpack-dev": "webpack serve",
+
+
+
+    "start": "concurrently \"yarn webpack-dev\" \"yarn dev\"",
+    "build": "concurrently \"yarn webpack-build\" \"yarn react-build\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,15 +47,25 @@
     ]
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.22.11",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-syntax-flow": "^7.14.5",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "@babel/preset-env": "^7.16.4",
+    "@testing-library/dom": "7.21.4",
     "autoprefixer": "^10.4.15",
+    "concurrently": "^8.2.1",
     "css-loader": "^6.8.1",
+    "eslint": "^8.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "html-webpack-plugin": "^5.5.3",
+    "postcss": "^8.1.0",
     "postcss-loader": "^7.3.3",
     "prettier": "^3.0.2",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
+    "typescript": "^2.8.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"

@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '../src/scss/app.scss';
 
 // All import bootstrap sass and javascript
-import './styles/bootstrap-min.css';
-import './styles/style-min.css';
+import './vendors/bootstrap.scss';
+import './js/bootstrap-min';
 
 import Home from './pages/home';
 
