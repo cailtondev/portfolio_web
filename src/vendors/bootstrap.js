@@ -2,4 +2,5 @@
 // eslint-disable-next-line no-unused-vars
 // import { Tooltip, Toast, Popover } from 'bootstrap';
 
-import * as bootstrap from 'bootstrap';
+// import * as bootstrap from 'bootstrap';
+import { Tooltip, Popover } from 'bootstrap'
