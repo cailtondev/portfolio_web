@@ -1,16 +1,33 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import '../src/scss/app.scss';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-// All import bootstrap sass and javascript
 import './vendors/bootstrap.scss';
+import './scss/app.scss';
 import './js/bootstrap-min';
 
-import Home from './pages/home';
+import Navbar from './components/Navbar';
+import Home from './pages/Home/index';
+import Projects from './pages/Projects/index';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// const root = document.getElementById('root');
+const root = document.getElementById('root');
+const rootElement = createRoot(root);
+
+rootElement.render(
   <React.StrictMode>
-    <Home />
+    <BrowserRouter>
+      <div>
+        <header>
+          <Navbar />
+        </header>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+        <footer>{/* Coloque seu footer aqui */}</footer>
+      </div>
+    </BrowserRouter>
   </React.StrictMode>,
 );
