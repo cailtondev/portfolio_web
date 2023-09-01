@@ -1,0 +1,73 @@
+@use '../abstracts/colors';
+@use '../abstracts/variables';
+
+.introduction {
+  padding: 65px 0;
+  text-align: center;
+
+  @media screen and (max-width: 590px) {
+    text-align: left;
+  }
+
+  h1 {
+    font-family: variables.$title-font;
+    color: colors.$white;
+    font-size: variables.$title-size;
+    padding: 0 16px;
+
+    span {
+      color: colors.$green;
+    }
+  }
+
+  .container-cards-introduction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    gap: 22px;
+
+    @media screen and (max-width: 590px) {
+      justify-content: left;
+    }
+
+    .cards-introduction {
+      display: flex;
+      align-items: center;
+      border: 1px solid colors.$green;
+
+      .span-cards-introduction {
+        font-family: variables.$number-font;
+        font-size: variables.$title-size;
+        background-color: colors.$green;
+        padding: 10px;
+      }
+
+      h2 {
+        margin: 0;
+        padding-left: 10px;
+        white-space: pre-line;
+        text-align: left;
+        font-size: 0.8125em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: variables.$bold-typeface-font;
+        color: colors.$white;
+        line-height: normal;
+
+        span {
+          color: colors.$green;
+        }
+      }
+
+      @media screen and (max-width: 590px) {
+        min-width: 100%;
+      }
+
+      @media screen and (min-width: 591px) {
+        padding-right: 20px;
+      }
+    }
+  }
+}

@@ -3,13 +3,11 @@ import Logo from '../../images/logo/logo.svg';
 
 function Navbar() {
   return (
-    <header className="navbar">
-      <nav className="container">
-        <a href="/">
-          <img src={Logo} alt="Logo do site" />
-        </a>
-      </nav>
-    </header>
+    <nav className="container">
+      <a href="/">
+        <img src={Logo} alt="Logo do site" width="138" height="37" />
+      </a>
+    </nav>
   );
 }
 

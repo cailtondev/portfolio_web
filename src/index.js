@@ -7,8 +7,8 @@ import './scss/app.scss';
 import './js/bootstrap-min';
 
 import Navbar from './components/Navbar';
-import Home from './pages/Home/index';
-import Projects from './pages/Projects/index';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 // const root = document.getElementById('root');
 const root = document.getElementById('root');
@@ -18,14 +18,16 @@ rootElement.render(
   <React.StrictMode>
     <BrowserRouter>
       <div>
-        <header>
+        <header className="navbar">
           <Navbar />
         </header>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </main>
         <footer>{/* Coloque seu footer aqui */}</footer>
       </div>
     </BrowserRouter>
