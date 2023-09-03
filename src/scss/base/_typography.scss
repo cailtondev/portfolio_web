@@ -9,6 +9,14 @@ $font-path: '../../fonts';
 }
 
 @font-face {
+  src: url('#{$font-path}/Egosta.woff2') format('woff2');
+  src: url('#{$font-path}/Egosta.woff') format('woff1');
+  src: url('#{$font-path}/Egosta.ttf') format('truetype');
+  font-family: 'Egosta';
+  font-display: swap;
+}
+
+@font-face {
   src: url('#{$font-path}/Staatliches.woff2') format('woff2');
   src: url('#{$font-path}/Staatliches.woff') format('woff');
   src: url('#{$font-path}/Staatliches.ttf') format('truetype');

@@ -1,6 +1,17 @@
 // (https://getbootstrap.com/docs/5.3/getting-started/parcel/)
 // eslint-disable-next-line no-unused-vars
-// import { Tooltip, Toast, Popover } from 'bootstrap';
 
-// import * as bootstrap from 'bootstrap';
-import { Tooltip, Popover } from 'bootstrap'
+// import {
+//   Alert,
+//   Button,
+//   Carousel,
+//   Collapse,
+//   Dropdown,
+//   Modal,
+//   Offcanvas,
+//   ScrollSpy,
+//   Tab,
+//   Toast,
+//   Tooltip,
+//   Popover,
+// } from 'bootstrap';

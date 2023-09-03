@@ -2,11 +2,15 @@
 @use '../abstracts/variables';
 
 .introduction {
-  padding: 65px 0;
+  padding-top: 65px;
   text-align: center;
 
   @media screen and (max-width: 590px) {
     text-align: left;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
   }
 
   h1 {
@@ -14,9 +18,8 @@
     color: colors.$white;
     font-size: variables.$title-size;
     padding: 0 16px;
-
     span {
-      color: colors.$green;
+      color: colors.$orange;
     }
   }
 
@@ -24,8 +27,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: variables.$x-axis-padding;
+    padding-bottom: variables.$x-axis-padding;
     gap: 22px;
 
     @media screen and (max-width: 590px) {
@@ -35,20 +38,19 @@
     .cards-introduction {
       display: flex;
       align-items: center;
-      border: 1px solid colors.$green;
+      border: 1px solid colors.$orange;
 
       .span-cards-introduction {
         font-family: variables.$number-font;
         font-size: variables.$title-size;
-        background-color: colors.$green;
-        padding: 10px;
+        background-color: colors.$orange;
+        padding: 5px 10px;
       }
 
       h2 {
         margin: 0;
         padding-left: 10px;
         white-space: pre-line;
-        text-align: left;
         font-size: 0.8125em;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -57,7 +59,7 @@
         line-height: normal;
 
         span {
-          color: colors.$green;
+          color: colors.$orange;
         }
       }
 

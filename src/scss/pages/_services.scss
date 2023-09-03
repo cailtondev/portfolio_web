@@ -1,0 +1,74 @@
+@use '../abstracts/colors';
+@use '../abstracts/variables';
+
+.services {
+  background-color: colors.$white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: variables.$x-axis-padding variables.$y-axis-padding;
+
+  @media screen and (min-width: 1120px) {
+    background-image: url('../../images/profile/profile-services.webp');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+
+  .title-services {
+    font-family: variables.$title-font;
+    font-size: variables.$title-size;
+    color: colors.$blue;
+    margin-bottom: variables.$title-margin-bottom;
+
+    .background-effect-span {
+      background: linear-gradient(180deg, transparent 60%, colors.$orange 40%);
+    }
+  }
+
+  .paragraph-services {
+    font-family: variables.$paragraph-font;
+    font-size: variables.$paragraph-size;
+    margin-bottom: variables.$paragraph-margin-bottom;
+
+    @media screen and (min-width: 1120px) {
+      & {
+        max-width: 70%;
+      }
+    }
+  }
+
+  .container-card-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    margin-top: 32px;
+
+    .card-services {
+      max-width: 280px;
+      border-left: 8px solid colors.$orange;
+      background-color: colors.$blue;
+      padding: 17px 25px;
+
+      @media (max-width: 630px) {
+        & {
+          min-width: 100%;
+        }
+      }
+
+      .title-card-services {
+        font-size: 1em;
+        color: colors.$seasalt;
+        text-transform: uppercase;
+        font-family: variables.$bold-typeface-font;
+      }
+
+      .paragraph-card-services {
+        color: colors.$gray;
+        font-family: variables.$paragraph-font;
+        font-size: 0.813em;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
