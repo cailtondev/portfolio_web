@@ -30,6 +30,7 @@
     font-family: variables.$paragraph-font;
     font-size: variables.$paragraph-size;
     margin-bottom: variables.$paragraph-margin-bottom;
+    color: colors.$gray-50;
 
     @media screen and (min-width: 1120px) {
       & {
