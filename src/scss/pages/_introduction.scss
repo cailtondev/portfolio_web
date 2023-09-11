@@ -14,10 +14,9 @@
   }
 
   h1 {
-    font-family: variables.$title-font;
     color: colors.$white;
-    font-size: variables.$title-size;
     padding: 0 16px;
+
     span {
       color: colors.$orange;
     }
@@ -42,7 +41,6 @@
 
       .span-cards-introduction {
         font-family: variables.$bold-typeface-font;
-        font-size: variables.$title-size;
         background-color: colors.$orange;
         padding: 5px 10px;
       }

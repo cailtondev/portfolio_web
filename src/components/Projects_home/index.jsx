@@ -29,15 +29,6 @@ function Projects_home() {
               className="card-img-top"
               alt="Imagem do meu projeto."
             />
-            <div className="card-body">
-              <h2 className="card-title">Card title</h2>
-
-              <p className="card-text">
-                Esta é uma carta mais larga com texto de suporte abaixo,
-                servindo como uma introdução natural a conteúdo adicional. Este
-                conteúdo é um pouco mais longo.
-              </p>
-            </div>
           </div>
 
           <div className="card h-100">
@@ -46,15 +37,6 @@ function Projects_home() {
               className="card-img-top"
               alt="Imagem do meu projeto."
             />
-            <div className="card-body">
-              <h2 className="card-title">Card title</h2>
-
-              <p className="card-text">
-                Esta é uma carta mais larga com texto de suporte abaixo,
-                servindo como uma introdução natural a conteúdo adicional. Este
-                conteúdo é um pouco mais longo.
-              </p>
-            </div>
           </div>
 
           <div className="card h-100">
@@ -63,21 +45,12 @@ function Projects_home() {
               className="card-img-top"
               alt="Imagem do meu projeto."
             />
-            <div className="card-body">
-              <h2 className="card-title">Card title</h2>
-
-              <p className="card-text">
-                Esta é uma carta mais larga com texto de suporte abaixo,
-                servindo como uma introdução natural a conteúdo adicional. Este
-                conteúdo é um pouco mais longo.
-              </p>
-            </div>
           </div>
         </div>
 
         <Link to={'/projects'} className="no-texdecoration">
           <button className="btn-projects-home">
-            <img src={Arrow} alt="" />
+            <img src={Arrow} alt="Icone do botão" />
             Veja Todos
           </button>
         </Link>

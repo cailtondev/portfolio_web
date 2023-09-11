@@ -11,11 +11,19 @@ body {
   background-color: colors.$blue;
 }
 
+
+
 ::-webkit-scrollbar {
   width: 0;
 }
 
+h1,
+h2 {
+  font-family: 'Egosta';
+  font-size: 1.5rem;
+}
 
-.no-texdecoration {
-  text-decoration: none;
+p {
+  font-family: 'Overpass';
+  font-size: 1.125rem;
 }

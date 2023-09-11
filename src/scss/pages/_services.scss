@@ -16,10 +16,7 @@
   }
 
   .title-services {
-    font-family: variables.$title-font;
-    font-size: variables.$title-size;
     color: colors.$blue;
-    margin-bottom: variables.$title-margin-bottom;
 
     .background-effect-span {
       background: linear-gradient(180deg, transparent 60%, colors.$orange 40%);
@@ -27,9 +24,6 @@
   }
 
   .paragraph-services {
-    font-family: variables.$paragraph-font;
-    font-size: variables.$paragraph-size;
-    margin-bottom: variables.$paragraph-margin-bottom;
     color: colors.$gray-50;
 
     @media screen and (min-width: 1120px) {
@@ -66,7 +60,7 @@
 
       .paragraph-card-services {
         color: colors.$gray;
-        font-family: variables.$paragraph-font;
+        font-family: 'Overpass Italic';
         font-size: 0.813em;
         margin-bottom: 0;
       }

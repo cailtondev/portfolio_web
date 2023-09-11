@@ -1,0 +1,23 @@
+@mixin btn-style() {
+  color: colors.$blue;
+  font-weight: 500;
+  background-color: colors.$seasalt;
+  padding: 4px 12px;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  box-shadow: -5px 5px colors.$orange;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  margin-left: 5px;
+
+  &:hover {
+    box-shadow: none;
+  }
+}

@@ -1,13 +1,12 @@
 @use '../abstracts/colors';
 @use '../abstracts/variables';
+@import '../../scss/abstracts/mixins';
 
 .projects-home {
   padding: variables.$x-axis-padding variables.$y-axis-padding;
 
   .container {
     .title-projects-home {
-      font-family: variables.$title-font;
-      font-size: variables.$title-size;
       color: colors.$white;
 
       span {
@@ -16,9 +15,7 @@
     }
 
     .paragraph-projects-home {
-      font-family: variables.$paragraph-font;
       color: colors.$gray;
-      font-style: italic;
 
       i {
         color: colors.$seasalt;
@@ -41,30 +38,6 @@
           -ms-border-radius: 0 !important;
           -o-border-radius: 0 !important;
         }
-
-        .card-body {
-          background-color: colors.$white;
-
-          .card-title {
-            font-family: variables.$title-font;
-            font-size: variables.$paragraph-size;
-          }
-
-          .card-text {
-            font-family: variables.$paragraph-font;
-            font-weight: 200;
-            color: colors.$gray-50;
-            hyphens: auto;
-            -webkit-hyphens: auto;
-            -moz-hyphens: auto;
-            -ms-hyphens: auto;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-          }
-        }
       }
 
       @media screen and (max-width: 766px) {
@@ -77,28 +50,8 @@
     .btn-projects-home {
       display: flex;
       align-items: center;
-      color: colors.$blue;
-      font-weight: 500;
-      background-color: colors.$seasalt;
-      padding: 4px 12px;
-      border: none;
-      border-radius: 0;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      -o-border-radius: 0;
       margin-top: 14px;
-      font-family: variables.$title-font;
-      box-shadow: -5px 5px colors.$orange;
-      transition: 0.4s;
-      -webkit-transition: 0.4s;
-      -moz-transition: 0.4s;
-      -ms-transition: 0.4s;
-      -o-transition: 0.4s;
-
-      &:hover {
-        box-shadow: none;
-      }
+      @include btn-style();
 
       img {
         margin-right: 6px;

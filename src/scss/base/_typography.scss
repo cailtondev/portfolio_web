@@ -1,14 +1,6 @@
 $font-path: '../../fonts';
 
 @font-face {
-  src: url('#{$font-path}/Stark.woff2') format('woff2');
-  src: url('#{$font-path}/Stark.woff') format('woff1');
-  src: url('#{$font-path}/Stark.ttf') format('truetype');
-  font-family: 'Stark';
-  font-display: swap;
-}
-
-@font-face {
   src: url('#{$font-path}/Egosta.woff2') format('woff2');
   src: url('#{$font-path}/Egosta.woff') format('woff1');
   src: url('#{$font-path}/Egosta.ttf') format('truetype');
@@ -35,46 +27,19 @@ $font-path: '../../fonts';
 }
 
 @font-face {
-  src: url('#{$font-path}/DMMono-Italic.woff2') format('woff2');
-  src: url('#{$font-path}/DMMono-Italic.woff') format('woff');
-  src: url('#{$font-path}/DMMono-Italic.ttf') format('truetype');
+  src: url('#{$font-path}/Overpass-Italic.woff2') format('woff2');
+  src: url('#{$font-path}/Overpass-Italic.woff') format('woff');
+  src: url('#{$font-path}/Overpass-Italic.ttf') format('truetype');
 
-  font-family: 'DMMono Italic';
+  font-family: 'Overpass Italic';
   font-display: swap;
 }
 
 @font-face {
-  src: url('#{$font-path}/DMMono-Regular.woff2') format('woff2');
-  src: url('#{$font-path}/DMMono-Regular.woff') format('woff');
-  src: url('#{$font-path}/DMMono-Regular.ttf') format('truetype');
+  src: url('#{$font-path}/Overpass.woff2') format('woff2');
+  src: url('#{$font-path}/Overpass.woff') format('woff');
+  src: url('#{$font-path}/Overpass.ttf') format('truetype');
 
-  font-family: 'DMMono Regular';
-  font-display: swap;
-}
-
-@font-face {
-  src: url('#{$font-path}/Outfit-Light.woff2') format('woff2');
-  src: url('#{$font-path}/Outfit-Light.woff') format('woff');
-  src: url('#{$font-path}/Outfit-Light.ttf') format('truetype');
-
-  font-family: 'Outfit Light';
-  font-display: swap;
-}
-
-@font-face {
-  src: url('#{$font-path}/Outfit-Regular.woff2') format('woff2');
-  src: url('#{$font-path}/Outfit-Regular.woff') format('woff');
-  src: url('#{$font-path}/Outfit-Regular.ttf') format('truetype');
-
-  font-family: 'Outfit Regular';
-  font-display: swap;
-}
-
-@font-face {
-  src: url('#{$font-path}/Outfit-Bold.woff2') format('woff2');
-  src: url('#{$font-path}/Outfit-Bold.woff') format('woff');
-  src: url('#{$font-path}/Outfit-Bold.ttf') format('truetype');
-
-  font-family: 'Outfit Bold';
+  font-family: 'Overpass';
   font-display: swap;
 }

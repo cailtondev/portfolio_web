@@ -1,0 +1,73 @@
+@use '../abstracts/colors';
+@use '../abstracts/variables';
+@import '../../scss/abstracts/mixins';
+
+.about {
+  position: relative;
+  .row {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+
+    .image-about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      @media screen and (max-width: 770px) {
+        margin-bottom: 66px;
+      }
+
+      img {
+        box-shadow: -10px 10px colors.$orange;
+      }
+    }
+
+    .container-about-info {
+      .title-about {
+        color: colors.$white;
+
+        span {
+          color: colors.$orange;
+        }
+      }
+
+      .paragraph {
+        color: #c9c7c7;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        @include btn-style();
+
+        img {
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  .container-text-effect {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    top: 3%;
+
+    .text-effect {
+      font-size: 13.438em;
+      font-family: '53Dollars 92Cents';
+      color: rgba(0, 0, 0, 0.31);
+
+      &::after {
+        content: attr(text-style);
+        position: absolute;
+        right: 0;
+        margin: 6px 9px 0;
+        color: transparent;
+        -webkit-text-stroke: 0.15vw #000000b9;
+      }
+    }
+  }
+}
