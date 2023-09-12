@@ -1,0 +1,36 @@
+@use '../abstracts/colors';
+
+.container-btnTop {
+  .btnTop {
+    bottom: 20px;
+    right: 15px;
+    padding: 10px;
+    border: 0;
+    border-radius: 6px;
+    position: fixed;
+    background-color: colors.$white;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    animation: upAnimation 2s infinite;
+    -webkit-animation: upAnimation 2s infinite;
+    display: none;
+  }
+
+  button.visible {
+    display: block;
+  }
+}
+
+@keyframes upAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

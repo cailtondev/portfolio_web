@@ -9,12 +9,11 @@ import './js/bootstrap-min';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import TopButton from './components/TopButton';
 
-// const root = document.getElementById('root');
-const root = document.getElementById('root');
-const rootElement = createRoot(root);
+const root = createRoot(document.getElementById('root'));
 
-rootElement.render(
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <div>
@@ -28,6 +27,7 @@ rootElement.render(
             <Route path="/projects" element={<Projects />} />
           </Routes>
         </main>
+        <TopButton />
         <footer>{/* Coloque seu footer aqui */}</footer>
       </div>
     </BrowserRouter>

@@ -38,7 +38,12 @@ function About() {
             </p>
 
             <button className="component-buttom btn  btn-light">
-              <img src={Icon} alt="Icone do arquivo pdf" />
+              <img
+                src={Icon}
+                width="16"
+                height="16"
+                alt="Baixar currículo pdf"
+              />
               Curriculo
             </button>
           </div>

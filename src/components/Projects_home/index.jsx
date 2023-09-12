@@ -50,7 +50,7 @@ function Projects_home() {
 
         <Link to={'/projects'} className="no-texdecoration">
           <button className="btn-projects-home">
-            <img src={Arrow} alt="Icone do botão" />
+            <img src={Arrow} width="16" height="16" alt="Icone" />
             Veja Todos
           </button>
         </Link>
