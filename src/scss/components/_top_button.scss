@@ -15,7 +15,15 @@
     -o-border-radius: 6px;
     animation: upAnimation 2s infinite;
     -webkit-animation: upAnimation 2s infinite;
+    box-shadow: 0 5px colors.$orange;
+    border: 1px solid colors.$orange;
     display: none;
+
+    &:hover,
+    &::selection {
+      animation: none;
+      -webkit-animation: none;
+    }
   }
 
   button.visible {
