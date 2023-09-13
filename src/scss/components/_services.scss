@@ -53,14 +53,14 @@
 
       .title-card-services {
         font-size: 1em;
-        color: colors.$seasalt;
+        color: colors.$white;
         text-transform: uppercase;
         font-family: variables.$bold-typeface-font;
       }
 
       .paragraph-card-services {
         color: colors.$gray;
-        font-family: 'Overpass Italic';
+        font-family: variables.$font-paragraph-italic;
         font-size: 0.813em;
         margin-bottom: 0;
       }

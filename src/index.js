@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import TopButton from './components/TopButton';
+import Footer from './components/Footer';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -28,7 +29,7 @@ root.render(
           </Routes>
         </main>
         <TopButton />
-        <footer>{/* Coloque seu footer aqui */}</footer>
+        <Footer />
       </div>
     </BrowserRouter>
   </React.StrictMode>,

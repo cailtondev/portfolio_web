@@ -1,0 +1,64 @@
+@use '../abstracts/colors';
+@use '../abstracts/variables';
+
+.footer {
+  background-color: colors.$white;
+  padding-left: variables.$y-axis-padding;
+  padding-right: variables.$y-axis-padding;
+
+  .container {
+    padding-top: 22px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 790px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 790px) {
+      justify-content: space-between;
+    }
+
+    .footer-more {
+      .title-footer {
+        color: colors.$dark;
+        text-transform: uppercase;
+        font-family: variables.$bold-typeface-font;
+      }
+
+      .paragraph-footer {
+        color: colors.$gray-50;
+        margin-bottom: 0;
+      }
+    }
+
+    .footer-social-icons {
+      display: flex;
+      justify-content: end;
+      align-items: end;
+
+      ul {
+        display: flex;
+        gap: 14px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    @media screen and (max-width: 790px) {
+      .footer-social-icons {
+        margin-top: 30px;
+        justify-content: left;
+      }
+    }
+  }
+
+  .copywriting {
+    color: colors.$gray-50;
+    text-align: center;
+    padding-top: 40px;
+    font-family: variables.$font-paragraph-italic;
+    margin-bottom: 0;
+  }
+}

@@ -34,7 +34,12 @@
       }
 
       .paragraph {
-        color: #c9c7c7;
+        color: #BFBFBF;
+
+        b {
+          color: #f0f0f0;
+          font-weight: 500;
+        }
       }
 
       button {
@@ -57,7 +62,7 @@
 
     .text-effect {
       font-size: 13.438em;
-      font-family: '53Dollars 92Cents';
+      font-family: variables.$font-background-style;
       color: rgba(0, 0, 0, 0.31);
 
       &::after {

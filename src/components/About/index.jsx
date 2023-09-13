@@ -16,25 +16,28 @@ function About() {
             </h2>
 
             <p className="paragraph">
-              Olá. Meu nome é Cailton e atuo na área de Desenvolvimento Web
-              Full-Stack.
+              Olá. Meu nome é <b>Cailton</b> e atuo na área de{' '}
+              <b>Desenvolvimento Web Full-Stack</b>.
             </p>
 
             <p className="paragraph">
               Iniciei minha carreira na área de T.I em 2018, e venho me
               aprimorando ainda mais através de cursos, livros e bootcamps
-              oferecidos por empresas renomadas do mercado, como Santander,
-              Inter, Philips, Take Blip e Oracle.
+              oferecidos por empresas renomadas do mercado, como{' '}
+              <b>Santander</b>,<b>Inter</b>, <b>Philips</b>, <b>Take Blip</b> e{' '}
+              <b>Oracle</b>.
             </p>
 
-            {/* <p className="paragraph">
-            No momento, estou atuando como Freelancer, Desenvolvedor Voluntário
-            em projetos sem fins lucrativos e em projetos pessoais.
-          </p> */}
+            <p className="paragraph">
+              No momento, estou atuando como <b>Freelancer</b> e{' '}
+              <b>trabalhos voluntários</b>.
+            </p>
 
             <p className="paragraph">
-              Estou disponível para vagas CLT ou Freelancer, preferencialmente,
-              com foco em Front-End.
+              <b>
+                Estou disponível para vagas CLT ou Freelancer,
+                preferencialmente, com foco em Front-End.
+              </b>
             </p>
 
             <button className="component-buttom btn  btn-light">
