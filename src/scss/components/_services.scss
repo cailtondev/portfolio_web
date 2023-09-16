@@ -2,7 +2,7 @@
 @use '../abstracts/variables';
 
 .services {
-  background-color: colors.$white;
+  background-color: colors.$background-dark;
   display: flex;
   align-items: center;
   position: relative;
@@ -16,15 +16,12 @@
   }
 
   .title-services {
-    color: colors.$blue;
-
-    .background-effect-span {
-      background: linear-gradient(180deg, transparent 60%, colors.$orange 40%);
-    }
+    color: colors.$text-light;
   }
 
   .paragraph-services {
-    color: colors.$gray-50;
+    color: colors.$paragraph-light;
+    font-weight: 300;
 
     @media screen and (min-width: 1120px) {
       & {
@@ -41,8 +38,8 @@
 
     .card-services {
       max-width: 280px;
-      border-left: 8px solid colors.$orange;
-      background-color: colors.$blue;
+      border-left: 8px solid colors.$highlight-color;
+      background-color: colors.$background-light;
       padding: 17px 25px;
 
       @media (max-width: 630px) {
@@ -53,15 +50,15 @@
 
       .title-card-services {
         font-size: 1em;
-        color: colors.$white;
+        color: colors.$text-dark;
         text-transform: uppercase;
         font-family: variables.$bold-typeface-font;
       }
 
       .paragraph-card-services {
-        color: colors.$gray;
+        color: colors.$text-dark;
         font-family: variables.$font-paragraph-italic;
-        font-size: 0.813em;
+        font-size: 0.9em;
         margin-bottom: 0;
       }
     }

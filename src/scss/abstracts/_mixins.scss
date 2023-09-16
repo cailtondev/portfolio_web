@@ -1,15 +1,16 @@
 @mixin btn-style() {
-  color: colors.$blue;
+  color: colors.$text-dark;
+  color: colors.$text-light;
   font-weight: 500;
-  background-color: colors.$white;
+  background-color: colors.$highlight-color;
   padding: 4px 12px;
-  border: none;
+  // border: 2px solid colors.$background-dark;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
-  box-shadow: -5px 5px colors.$orange;
+  // box-shadow: -5px 5px colors.$background-dark;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;

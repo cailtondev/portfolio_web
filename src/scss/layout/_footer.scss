@@ -2,7 +2,7 @@
 @use '../abstracts/variables';
 
 .footer {
-  background-color: colors.$white;
+  background-color: colors.$background-dark;
   padding-left: variables.$y-axis-padding;
   padding-right: variables.$y-axis-padding;
 
@@ -22,13 +22,13 @@
 
     .footer-more {
       .title-footer {
-        color: colors.$dark;
+        color: colors.$text-light;
         text-transform: uppercase;
         font-family: variables.$bold-typeface-font;
       }
 
       .paragraph-footer {
-        color: colors.$gray-50;
+        color: colors.$paragraph-light;
         margin-bottom: 0;
       }
     }
@@ -55,10 +55,11 @@
   }
 
   .copywriting {
-    color: colors.$gray-50;
+    color: colors.$paragraph-light;
     text-align: center;
     padding-top: 40px;
     font-family: variables.$font-paragraph-italic;
     margin-bottom: 0;
+    font-size: 1em;
   }
 }

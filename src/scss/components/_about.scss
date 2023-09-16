@@ -4,6 +4,7 @@
 
 .about {
   position: relative;
+  padding-bottom: variables.$x-axis-padding;
   .row {
     padding: 0 12px;
     display: flex;
@@ -20,26 +21,22 @@
       }
 
       img {
-        box-shadow: -10px 10px colors.$orange;
+        box-shadow: -10px 10px colors.$background-dark;
+        border: 2px solid colors.$background-dark;
       }
     }
 
     .container-about-info {
       .title-about {
-        color: colors.$white;
+        color: colors.$text-dark;
 
         span {
-          color: colors.$orange;
+          color: colors.$highlight-color;
         }
       }
 
       .paragraph {
-        color: #BFBFBF;
-
-        b {
-          color: #f0f0f0;
-          font-weight: 500;
-        }
+        color: colors.$paragraph-dark;
       }
 
       button {
@@ -47,32 +44,20 @@
         align-items: center;
         @include btn-style();
 
-        img {
-          margin-right: 6px;
+        svg {
+          margin-left: 6px;
         }
       }
     }
   }
 
-  .container-text-effect {
+  .text-background {
     z-index: -1;
     position: absolute;
     right: 0;
-    top: 3%;
-
-    .text-effect {
-      font-size: 13.438em;
-      font-family: variables.$font-background-style;
-      color: rgba(0, 0, 0, 0.31);
-
-      &::after {
-        content: attr(text-style);
-        position: absolute;
-        right: 0;
-        margin: 6px 9px 0;
-        color: transparent;
-        -webkit-text-stroke: 0.15vw #000000b9;
-      }
-    }
+    top: 5%;
+    font-size: 13.5em;
+    font-family: variables.$font-background-style;
+    color: #d0d1d160;
   }
 }

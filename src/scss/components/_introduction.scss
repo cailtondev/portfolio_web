@@ -2,72 +2,27 @@
 @use '../abstracts/variables';
 
 .introduction {
-  padding-top: 65px;
+  padding: 5em 1.5em;
   text-align: center;
 
   @media screen and (max-width: 590px) {
     text-align: left;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
   }
 
   h1 {
-    color: colors.$white;
-    padding: 0 16px;
+    color: colors.$text-dark;
 
     span {
-      color: colors.$orange;
+      color: colors.$highlight-color;
+      font-weight: bold;
     }
   }
 
-  .container-cards-introduction {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: variables.$x-axis-padding;
-    padding-bottom: variables.$x-axis-padding;
-    gap: 22px;
-
-    @media screen and (max-width: 590px) {
-      justify-content: left;
-    }
-
-    .cards-introduction {
-      display: flex;
-      align-items: center;
-      border: 1px solid colors.$orange;
-
-      .span-cards-introduction {
-        font-family: variables.$bold-typeface-font;
-        background-color: colors.$orange;
-        padding: 5px 10px;
-      }
-
-      h2 {
-        margin: 0;
-        padding-left: 10px;
-        white-space: pre-line;
-        font-size: 0.8125em;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font-family: variables.$bold-typeface-font;
-        color: colors.$white;
-        line-height: normal;
-
-        span {
-          color: colors.$orange;
-        }
-      }
-
-      @media screen and (max-width: 590px) {
-        min-width: 100%;
-      }
-
-      @media screen and (min-width: 591px) {
-        padding-right: 20px;
-      }
-    }
+  .btn-contact {
+    background-color: colors.$highlight-color;
+    margin-top: 1.5em;
+    z-index: -1;
+    color: colors.$text-light;
+    font-weight: 600;
   }
 }

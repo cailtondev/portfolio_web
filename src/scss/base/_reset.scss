@@ -1,3 +1,5 @@
+@use '../abstracts/colors';
+
 .container {
   max-width: 1024px;
 }
@@ -6,6 +8,6 @@
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
+.bi {
+  color: colors.$text-light !important; /* Altere a cor para a que desejar */
 }

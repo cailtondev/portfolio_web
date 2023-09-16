@@ -7,19 +7,11 @@
 
   .container {
     .title-projects-home {
-      color: colors.$white;
-
-      span {
-        color: colors.$orange;
-      }
+      color: colors.$text-dark;
     }
 
     .paragraph-projects-home {
-      color: colors.$gray;
-
-      i {
-        color: colors.$white;
-      }
+      color: colors.$paragraph-dark;
       hyphens: auto;
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
@@ -28,15 +20,16 @@
 
     .container-cards-projects-home {
       .card {
-        background-color: transparent;
+        padding: 0;
         border: none;
+        border: 5px solid colors.$background-light;
 
         img {
-          border-radius: 0 !important;
-          -webkit-border-radius: 0 !important;
-          -moz-border-radius: 0 !important;
-          -ms-border-radius: 0 !important;
-          -o-border-radius: 0 !important;
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
         }
       }
 
@@ -53,8 +46,8 @@
       margin-top: 14px;
       @include btn-style();
 
-      img {
-        margin-right: 6px;
+      svg {
+        margin-left: 6px;
       }
     }
   }

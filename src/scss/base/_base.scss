@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: colors.$blue;
+  background-color: colors.$background-light;
   font-family: variables.$font-paragraph;
 }
 
@@ -25,4 +25,15 @@ h2 {
 
 p {
   font-size: 1.125rem;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+.btn-contact {
+  border: none;
+  line-height: 1 !important;
+  padding: 10px 20px !important;
 }

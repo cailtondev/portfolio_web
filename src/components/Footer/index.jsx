@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className="copywriting">© 2023 - Todos os direitos reservados.</p>
+      <p className="copywriting">© By Cailton Oliveira - 2023</p>
     </footer>
   );
 };
