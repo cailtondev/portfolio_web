@@ -8,7 +8,10 @@ const Introduction = () => {
 
       <button
         className="btn-contact"
-        onClick={() => window.open(`https://wa.me/77998249382`)}
+        onClick={() => {
+          window.open('https://wa.me/77998249382');
+          window.scrollTo(0, 0);
+        }}
       >
         Fale comigo
       </button>

@@ -2,21 +2,22 @@
 
 .container-btnTop {
   .btnTop {
+    z-index: 100;
     bottom: 20px;
     right: 15px;
     padding: 10px !important;
     border: 0;
     border-radius: 6px;
     position: fixed;
-    background-color: colors.$white;
+    background-color: colors.$background-light;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
     animation: upAnimation 2s infinite;
     -webkit-animation: upAnimation 2s infinite;
-    box-shadow: 0 5px colors.$blue;
-    border: 1px solid colors.$blue;
+    box-shadow: 0 5px colors.$highlight-color;
+    border: 2px solid colors.$highlight-color;
     display: none;
 
     &:hover,

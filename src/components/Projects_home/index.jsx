@@ -46,7 +46,10 @@ function Projects_home() {
         </div>
 
         <Link to={'/projects'} className="no-texdecoration">
-          <button className="btn-projects-home">
+          <button
+            className="btn-projects-home"
+            onClick={() => window.scrollTo(0, 0)}
+          >
             Ver Todos
             <svg
               xmlns="http://www.w3.org/2000/svg"

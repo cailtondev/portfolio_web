@@ -4,7 +4,8 @@
 
 .about {
   position: relative;
-  padding-bottom: variables.$x-axis-padding;
+  z-index: 4;
+
   .row {
     padding: 0 12px;
     display: flex;
@@ -58,6 +59,6 @@
     top: 5%;
     font-size: 13.5em;
     font-family: variables.$font-background-style;
-    color: #d0d1d160;
+    color: #0505050c;
   }
 }

@@ -18,7 +18,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <div>
-        <header className="navbar">
+        <header className="navbar" id="navbar">
           <Navbar />
         </header>
 

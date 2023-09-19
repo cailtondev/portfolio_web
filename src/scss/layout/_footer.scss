@@ -5,6 +5,7 @@
   background-color: colors.$background-dark;
   padding-left: variables.$y-axis-padding;
   padding-right: variables.$y-axis-padding;
+  z-index: 3;
 
   .container {
     padding-top: 22px;

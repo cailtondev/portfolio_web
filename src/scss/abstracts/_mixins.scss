@@ -1,24 +1,72 @@
+@use '../abstracts/colors';
+
 @mixin btn-style() {
   color: colors.$text-dark;
   color: colors.$text-light;
   font-weight: 500;
   background-color: colors.$highlight-color;
   padding: 4px 12px;
-  // border: 2px solid colors.$background-dark;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
-  // box-shadow: -5px 5px colors.$background-dark;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
-  margin-left: 5px;
 
   &:hover {
     box-shadow: none;
+  }
+}
+
+@mixin contact() {
+  .user-box {
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 5px 0;
+      color: colors.$text-dark;
+      margin-bottom: 36px;
+      border: none;
+      border-bottom: 1px solid colors.$paragraph-dark;
+      outline: none;
+      background: transparent !important;
+
+      &:focus,
+      &:valid {
+        border-bottom: 1px solid colors.$highlight-color;
+      }
+    }
+
+    label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 5px 0;
+      color: colors.$paragraph-dark;
+      pointer-events: none;
+      transition: 0.5s;
+    }
+
+    input:focus ~ label,
+    input:valid ~ label {
+      top: -25px;
+      left: 0;
+      color: colors.$highlight-color;
+    }
+  }
+
+  button {
+    text-align: center;
+    width: 100%;
+    padding: 7px;
+    background-color: colors.$background-dark;
+    color: colors.$text-light;
+    font-family: 'Staatliches';
+    border: 0;
   }
 }

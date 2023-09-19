@@ -1,5 +1,4 @@
 import Profile from '../../images/profile/profile-resume.webp';
-// import Icon from '../../images/icons/filetype-pdf.svg';
 
 function About() {
   return (
@@ -7,7 +6,13 @@ function About() {
       <div className="container">
         <div className="row">
           <figure className="col-md-5 image-about">
-            <img className="img-fluid" src={Profile} alt="Imagem de perfil" />
+            <img
+              className="img-fluid"
+              src={Profile}
+              width="295"
+              height="395"
+              alt="Imagem de perfil"
+            />
           </figure>
 
           <div className="col-md-7 container-about-info">

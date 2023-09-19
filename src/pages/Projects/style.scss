@@ -1,0 +1,23 @@
+@import '../../scss/abstracts/mixins';
+
+.projects-page {
+  padding: 9em 24px;
+  height: 100vh;
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-style: italic;
+  }
+
+  @media (min-width: 800px) {
+    padding-right: 130px;
+  }
+
+  button {
+    margin-top: 10px;
+    @include btn-style();
+  }
+}

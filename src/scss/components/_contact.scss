@@ -1,0 +1,151 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
+.contact {
+  position: relative;
+  padding: 80px 12px variables.$x-axis-padding 12px;
+  z-index: 2;
+  overflow: hidden;
+
+  .container-contact.background {
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+
+  .container-contact {
+    z-index: 2;
+    position: relative;
+    margin: 0 auto;
+    max-width: 777px;
+
+    @media (min-width: 700px) {
+      backdrop-filter: blur(3px);
+    }
+
+    .row-container {
+      margin: 0;
+      z-index: 2;
+      position: relative;
+      background: linear-gradient(
+        to right,
+        transparent 0%,
+        transparent 87%,
+        colors.$highlight-color 87%,
+        colors.$highlight-color 100%
+      );
+      padding: 35px 90px;
+
+      @media (max-width: 699px) {
+        background: linear-gradient(
+          to bottom,
+          transparent 0%,
+          transparent 87%,
+          colors.$highlight-color 87%,
+          colors.$highlight-color 100%
+        );
+      }
+
+      @media (max-width: 1000px) {
+        padding: 3em 2em;
+      }
+
+      .container-form-contact {
+        padding: 0;
+        @media (min-width: 700px) {
+          max-width: 339.03px;
+        }
+
+        .title-contact {
+          color: colors.$text-dark;
+        }
+
+        .paragraph-contact {
+          font-family: variables.$font-paragraph-italic;
+          color: colors.$paragraph-dark;
+        }
+
+        form {
+          @include mixins.contact;
+        }
+      }
+
+      .container-contact-more {
+        position: absolute;
+        padding: 23px 27px;
+        background-color: colors.$background-dark;
+        max-width: 260px;
+        top: 0;
+        right: 0;
+        transform: translateY(50%);
+        -webkit-transform: translateY(50%);
+        -moz-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        -o-transform: translateY(50%);
+
+        @media (max-width: 699px) {
+          display: none;
+          max-width: 330px;
+        }
+
+        @media (min-width: 750px) {
+          max-width: 290px;
+        }
+
+        &::after {
+          content: ' ';
+          width: 20px;
+          height: 20px;
+          background-color: colors.$highlight-color;
+          position: absolute;
+          top: -5px;
+          left: -5px;
+        }
+
+        .title-contact-more {
+          margin-bottom: 16px;
+        }
+
+        .title-contact-more {
+          color: colors.$paragraph-light;
+        }
+
+        .paragraph-contact-more {
+          font-family: variables.$font-paragraph-italic;
+          color: colors.$text-light;
+          margin-bottom: 8px;
+        }
+
+        .container-social-icons {
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          padding: 0;
+
+          li,
+          a {
+            margin: 0 2px;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .image-background {
+    position: absolute;
+    z-index: 10;
+    top: -150px;
+    right: -150px;
+  }
+
+  .text-background {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    font-size: 13.5em;
+    font-family: variables.$font-background-style;
+    color: #0505050c;
+  }
+}
