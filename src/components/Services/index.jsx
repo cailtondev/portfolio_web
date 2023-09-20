@@ -4,9 +4,7 @@ function Services() {
   return (
     <section className="services">
       <div className="container">
-        <h1 className="title-services">
-          O quê <span className="background-effect-span">ofereço?</span>
-        </h1>
+        <h1 className="title-services">O quê ofereço?</h1>
 
         <p className="paragraph-services">
           Desenvolvimento de sites responsivos, combinando tecnologia e

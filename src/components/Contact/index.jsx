@@ -37,7 +37,7 @@ function Contact() {
                       id="message"
                       required
                     />
-                    <label htmlFor="name">Mensagem:</label>
+                    <label htmlFor="message">Mensagem:</label>
                   </div>
 
                   <button type="submit">ENVIAR</button>
