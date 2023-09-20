@@ -20,13 +20,13 @@ function Contact() {
 
                 <form action="https://formspree.io/f/mzbqogrz" method="POST">
                   <div className="user-box">
-                    <input type="text" name="name" required />
-                    <label>Nome:</label>
+                    <input type="text" name="name" id="name" required />
+                    <label htmlFor="name">Nome:</label>
                   </div>
 
                   <div className="user-box">
-                    <input type="email" name="email" required />
-                    <label>Email:</label>
+                    <input type="email" id="email" name="email" required />
+                    <label htmlFor="email">Email:</label>
                   </div>
 
                   <div className="user-box">
@@ -34,9 +34,10 @@ function Contact() {
                       type="text"
                       name="message"
                       data-ms-editor="true"
+                      id="message"
                       required
                     />
-                    <label>Mensagem:</label>
+                    <label htmlFor="name">Mensagem:</label>
                   </div>
 
                   <button type="submit">ENVIAR</button>
