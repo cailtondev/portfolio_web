@@ -24,7 +24,6 @@ function Technology() {
     <section className="container technology">
       <h2 className="title-technology">
         Principais tecnologias que utilizo no desenvolvimento web
-        {/* Tecnologias que vou utilizar no desenvolvimento do seu site */}
       </h2>
 
       <div className="container-technology-icons">
