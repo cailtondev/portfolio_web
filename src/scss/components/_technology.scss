@@ -1,0 +1,58 @@
+@use '../abstracts/colors';
+@use '../abstracts/variables';
+
+.technology {
+  padding-top: 55px;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+
+  .title-technology {
+    // position: relative;
+    // display: inline-block;
+
+    // &::after {
+    //   content: '';
+    //   width: 250px;
+    //   height: 4px;
+    //   position: absolute;
+    //   top: -15px;
+    //   left: 50%;
+    //   transform: translatex(-50%);
+    //   -webkit-transform: translatex(-50%);
+    //   -moz-transform: translatex(-50%);
+    //   -ms-transform: translatex(-50%);
+    //   -o-transform: translatex(-50%);
+    // }
+  }
+
+  .container-technology-icons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 46px;
+    align-items: center;
+    justify-content: center;
+
+    .technology-icons {
+      img {
+        outline-offset: 8px;
+        outline: 2px dashed;
+        margin-bottom: 20px;
+        background-color: #0505050c;
+        padding: 10px;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+      }
+
+      .title-technology-icons {
+        font-family: variables.$bold-typeface-font;
+        color: colors.$paragraph-dark;
+      }
+    }
+  }
+}

@@ -7,29 +7,26 @@ function Services() {
         <h1 className="title-services">O quê ofereço?</h1>
 
         <p className="paragraph-services">
-          Desenvolvimento de sites responsivos, combinando tecnologia e
-          criatividade de forma harmoniosa.
-        </p>
-
-        <p className="paragraph-services">
-          Códigos limpos, permitindo fácil acesso em manutenções futuras e
-          adições de novos recursos.
+          Desenvolvimento de websites responsivos que harmonizam tecnologia e
+          criatividade. Códigos limpos que garantem acessibilidade fácil em
+          futuras manutenções e na adição de novos recursos.
         </p>
 
         <div className="container-card-services">
           <div className="card-services">
-            <h2 className="title-card-services">Web Design</h2>
+            <h2 className="title-card-services">Desempenho</h2>
 
             <p className="paragraph-card-services">
-              Elaboração de web design criativos e responsivos.
+              Site com puntação acima de 90% no pagespeed/lighthouse.
             </p>
           </div>
 
           <div className="card-services">
-            <h2 className="title-card-services">Desenvolvimento Web</h2>
+            <h2 className="title-card-services">Otimização</h2>
 
             <p className="paragraph-card-services">
-              Desenvolvimento web com codificação super suave.
+              Até 90% de redução do bootstrap não utilizado e arquivos
+              estáticos.
             </p>
           </div>
 

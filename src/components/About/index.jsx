@@ -21,15 +21,15 @@ function About() {
             </h2>
 
             <p className="paragraph">
-              Olá. Meu nome é <b>Cailton</b> e atuo na área de{' '}
-              <b>Desenvolvimento Web Full-Stack</b>.
+              Olá... Meu nome é <b>Cailton</b> e atuo na área de{' '}
+              <b>Desenvolvimento Web Front-End</b>.
             </p>
 
             <p className="paragraph">
               Iniciei minha carreira na área de T.I em 2018, e venho me
-              aprimorando ainda mais através de cursos, livros e bootcamps
-              oferecidos por empresas renomadas do mercado, como{' '}
-              <b>Santander</b>,<b>Inter</b>, <b>Philips</b>, <b>Take Blip</b> e{' '}
+              aprimorando através projetos pessoais/freelancer, cursos, livros e
+              bootcamps oferecidos por empresas renomadas do mercado, como{' '}
+              <b>Santander</b>, <b>Inter</b>, <b>Philips</b>, <b>Take Blip</b> e{' '}
               <b>Oracle</b>.
             </p>
 
