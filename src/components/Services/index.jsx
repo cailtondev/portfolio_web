@@ -1,10 +1,8 @@
-// import Icon_web from '../../images/icons/Icon-web.svg';
-
 function Services() {
   return (
     <section className="services">
       <div className="container">
-        <h1 className="title-services">O quê ofereço?</h1>
+        <h2 className="title-services">O quê ofereço?</h2>
 
         <p className="paragraph-services">
           Desenvolvimento de websites responsivos que harmonizam tecnologia e
@@ -17,7 +15,7 @@ function Services() {
             <h2 className="title-card-services">Desempenho</h2>
 
             <p className="paragraph-card-services">
-              Site com puntação acima de 90% no pagespeed/lighthouse.
+              Site com pontuação acima de 90% no pagespeed/lighthouse.
             </p>
           </div>
 

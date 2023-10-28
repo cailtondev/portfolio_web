@@ -2,8 +2,8 @@ const Introduction = () => {
   return (
     <section className="introduction container">
       <h1>
-        Vou criar o seu site com harmonia e criatividade para atingir seus
-        objetivos de negócios<span>_</span>
+        Vou criar soluções Inovadoras e Eficientes para te ajudar atrair mais
+        clientes a atingir seus objetivos de negócios<span>_</span>
       </h1>
 
       <button

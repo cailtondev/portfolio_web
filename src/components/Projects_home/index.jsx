@@ -9,7 +9,7 @@ function Projects_home() {
   return (
     <section className="projects-home">
       <div className="container">
-        <h1 className="title-projects-home">Veja os meus Trabalhos</h1>
+        <h2 className="title-projects-home">Veja os meus Trabalhos</h2>
 
         <p className="paragraph-projects-home">
           Clique em <b>“Veja Todos”</b> para conferir os projetos
