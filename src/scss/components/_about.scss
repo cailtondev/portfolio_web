@@ -30,6 +30,7 @@
     .container-about-info {
       .title-about {
         color: colors.$text-dark;
+        margin-bottom: 16px;
 
         span {
           color: colors.$highlight-color;
@@ -37,6 +38,7 @@
       }
 
       .paragraph {
+        line-height: 1;
         color: colors.$paragraph-dark;
       }
 
