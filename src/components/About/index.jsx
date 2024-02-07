@@ -3,7 +3,18 @@ import Profile from '../../images/profile/profile-resume.webp';
 import useConnectApi from '../useConnectApi';
 
 function About() {
-  const { data } = useConnectApi('resume');
+  const { data, isLoading, error } = useConnectApi('resume');
+
+  if (isLoading) {
+    return <p style={{ textAlign: 'center' }}>Carregando...</p>;
+  }
+
+  if (error) {
+    console.error('Erro ao buscar dados da API:', error);
+    return (
+      <p style={{ textAlign: 'center' }}>Ocorreu um erro ao buscar os dados.</p>
+    );
+  }
 
   return (
     <section className="about">
@@ -32,6 +43,12 @@ function About() {
               />
 
               <button className="component-buttom btn  btn-light">
+                <a
+                  href=""
+                  download={
+                    'https://gpdbdgszndzhiitlexxz.supabase.co/storage/v1/object/sign/portfolio_storage/cv-cailton-oliveira.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW9fc3RvcmFnZS9jdi1jYWlsdG9uLW9saXZlaXJhLnBkZiIsImlhdCI6MTcwNzMyODYxMywiZXhwIjo0ODI5MzkyNjEzfQ.n2eyTErgA8IelORiea_AwxdGvmVEBnsaTjIh-PB161M&t=2024-02-07T17%3A56%3A53.825Z'
+                  }
+                ></a>
                 Curriculo
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

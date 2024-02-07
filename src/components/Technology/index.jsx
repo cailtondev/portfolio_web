@@ -2,7 +2,18 @@ import React from 'react';
 import useConnectApi from '../useConnectApi';
 
 function Technology() {
-  const { data } = useConnectApi('technologies');
+  const { data, isLoading, error } = useConnectApi('technologies');
+
+  if (isLoading) {
+    return <p style={{ textAlign: 'center' }}>Carregando...</p>;
+  }
+
+  if (error) {
+    console.error('Erro ao buscar dados da API:', error);
+    return (
+      <p style={{ textAlign: 'center' }}>Ocorreu um erro ao buscar os dados.</p>
+    );
+  }
 
   return (
     <section className="container technology">
