@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 ideias.pdf
+backup.txt
+.env
 
 # testing
 /coverage

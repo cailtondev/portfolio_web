@@ -18,53 +18,52 @@ function Projects_home() {
 
   return (
     <>
-      {data.map((project) => (
-        <section key={project.id} className="projects-home">
-          <div className="container">
-            <h2 className="title-projects-home">{project.title}</h2>
+      <section className="projects-home">
+        <div className="container">
+          <h2 className="title-projects-home">Veja os meus trabalhos</h2>
 
-            <p
-              className="paragraph-projects-home"
-              dangerouslySetInnerHTML={{ __html: project.paragraph }}
-            ></p>
+          <p className="paragraph-projects-home">
+            Clique em <b>veja todos</b> para conferir todos os trabalhos.
+          </p>
 
-            <div
-              className="container-cards-projects-home row row-cols-sm-2
+          <div
+            className="container-cards-projects-home row row-cols-sm-2
       row-cols-md-3 g-4"
-            >
-              <div className="card h-100">
+          >
+            {data.map((project) => (
+              <div key={project.id} className="card h-100">
                 <img
                   src={project.image_link}
                   className="card-img-top"
                   alt={project.alt_image}
                 />
               </div>
-            </div>
-
-            <Link to={'/projects'} className="no-texdecoration">
-              <button
-                className="btn-projects-home"
-                onClick={() => window.scrollTo(0, 0)}
-              >
-                Ver Todos
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-              </button>
-            </Link>
+            ))}
           </div>
-        </section>
-      ))}
+
+          <Link to={'/projects'} className="no-texdecoration">
+            <button
+              className="btn-projects-home"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Ver Todos
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </button>
+          </Link>
+        </div>
+      </section>
     </>
   );
 }
