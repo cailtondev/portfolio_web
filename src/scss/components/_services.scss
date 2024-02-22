@@ -36,9 +36,8 @@
     margin-top: 32px;
 
     .card-services {
-      max-width: 280px;
-      border-left: 8px solid colors.$highlight-color;
       background-color: colors.$background-light;
+      max-width: 280px;
       padding: 17px 25px;
 
       @media (max-width: 630px) {
