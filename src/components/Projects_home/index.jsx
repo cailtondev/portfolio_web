@@ -3,16 +3,14 @@ import { Link } from 'react-router-dom';
 import useConnectApi from '../useConnectApi';
 
 function Projects_home() {
-  const { data, isLoading, error } = useConnectApi('projects');
-
-  if (isLoading) {
-    return <p style={{ textAlign: 'center' }}>Carregando...</p>;
-  }
+  const { data, error } = useConnectApi('projects');
 
   if (error) {
     console.error('Erro ao buscar dados da API:', error);
     return (
-      <p style={{ textAlign: 'center' }}>Ocorreu um erro ao buscar os dados.</p>
+      <p style={{ textAlign: 'center' }}>
+        Ocorreu um erro ao buscar os dados, recarregue a página.
+      </p>
     );
   }
 

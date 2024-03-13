@@ -2,16 +2,14 @@ import React from 'react';
 import useConnectApi from '../useConnectApi';
 
 function Technology() {
-  const { data, isLoading, error } = useConnectApi('technologies');
-
-  if (isLoading) {
-    return <p style={{ textAlign: 'center' }}>Carregando...</p>;
-  }
+  const { data, error } = useConnectApi('technologies');
 
   if (error) {
     console.error('Erro ao buscar dados da API:', error);
     return (
-      <p style={{ textAlign: 'center' }}>Ocorreu um erro ao buscar os dados.</p>
+      <p style={{ textAlign: 'center' }}>
+        Ocorreu um erro ao buscar os dados, recarregue a página.
+      </p>
     );
   }
 

@@ -6,16 +6,14 @@ import Image_background from '../../images/effect-background/background-effect.w
 import useConnectApi from '../useConnectApi';
 
 function Contact() {
-  const { data, isLoading, error } = useConnectApi('contact');
-
-  if (isLoading) {
-    return <p style={{ textAlign: 'center' }}>Carregando...</p>;
-  }
+  const { data, error } = useConnectApi('contact');
 
   if (error) {
     console.error('Erro ao buscar dados da API:', error);
     return (
-      <p style={{ textAlign: 'center' }}>Ocorreu um erro ao buscar os dados.</p>
+      <p style={{ textAlign: 'center' }}>
+        Ocorreu um erro ao buscar os dados, recarregue a página.
+      </p>
     );
   }
 

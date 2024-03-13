@@ -3,16 +3,14 @@ import Profile from '../../images/profile/profile-resume.webp';
 import useConnectApi from '../useConnectApi';
 
 function About() {
-  const { data, isLoading, error } = useConnectApi('resume');
-
-  if (isLoading) {
-    return <p style={{ textAlign: 'center' }}>Carregando...</p>;
-  }
+  const { data, error } = useConnectApi('resume');
 
   if (error) {
     console.error('Erro ao buscar dados da API:', error);
     return (
-      <p style={{ textAlign: 'center' }}>Ocorreu um erro ao buscar os dados.</p>
+      <p style={{ textAlign: 'center' }}>
+        Ocorreu um erro ao buscar os dados, recarregue a página.
+      </p>
     );
   }
 
