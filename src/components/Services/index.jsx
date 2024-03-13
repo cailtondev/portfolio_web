@@ -3,16 +3,14 @@ import useConnectApi from '../useConnectApi';
 import Card from './card';
 
 function Services() {
-  const { data, isLoading, error } = useConnectApi('offers');
-
-  if (isLoading) {
-    return <p style={{ textAlign: 'center' }}>Carregando...</p>;
-  }
+  const { data, error } = useConnectApi('offers');
 
   if (error) {
     console.error('Erro ao buscar dados da API:', error);
     return (
-      <p style={{ textAlign: 'center' }}>Ocorreu um erro ao buscar os dados.</p>
+      <p style={{ textAlign: 'center' }}>
+        Ocorreu um erro ao buscar os dados, recarregue a página.
+      </p>
     );
   }
 

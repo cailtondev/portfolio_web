@@ -5,7 +5,7 @@ import './style.scss';
 import useConnectApi from '../../components/useConnectApi';
 
 function Projects() {
-  const { data, isLoading, error } = useConnectApi('projects');
+  const { data, error } = useConnectApi('projects');
   const [currentPage, setCurrentPage] = useState(1);
   const [cardsPerPage, setCardsPerPage] = useState(6);
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -43,14 +43,12 @@ function Projects() {
     setCurrentPage(1);
   };
 
-  if (isLoading) {
-    return <p style={{ textAlign: 'center' }}>Carregando...</p>;
-  }
-
   if (error) {
     console.error('Erro ao buscar dados da API:', error);
     return (
-      <p style={{ textAlign: 'center' }}>Ocorreu um erro ao buscar os dados.</p>
+      <p style={{ textAlign: 'center' }}>
+        Ocorreu um erro ao buscar os dados, recarregue a página.
+      </p>
     );
   }
 

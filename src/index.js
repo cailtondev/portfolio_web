@@ -14,6 +14,10 @@ import Footer from './components/Footer';
 
 const root = createRoot(document.getElementById('root'));
 
+window.addEventListener('load', function () {
+  document.getElementById('loader-wrapper').style.display = 'none';
+});
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
