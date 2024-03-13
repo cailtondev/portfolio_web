@@ -1,23 +1,139 @@
-@import '../../scss/abstracts/mixins';
+@use '../../scss/abstracts/colors';
+@use '../../scss/abstracts/mixins';
 
 .projects-page {
-  padding: 9em 24px;
-  height: 100vh;
+  padding: 8em 24px;
 
-  h1 {
-    font-size: 2em;
+  .projects-page-title {
+    font-size: 1.5rem;
   }
 
-  p {
+  .projects-page-paragraph {
     font-style: italic;
   }
 
-  @media (min-width: 800px) {
-    padding-right: 130px;
+  .container-projects {
+    .body-project-card {
+      border: none;
+      margin-bottom: 24px;
+
+      .project-card {
+        padding: 8px;
+        border: 1px solid colors.$background-dark;
+
+        figure {
+          position: relative;
+
+          span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+          }
+
+          span,
+          figcaption {
+            border: 1px solid colors.$background-dark;
+            background-color: colors.$background-light;
+          }
+
+          figcaption {
+            z-index: 5;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 2px 6px;
+            line-height: normal;
+            font-size: 0.8rem;
+
+            time {
+              font-weight: 600;
+            }
+          }
+        }
+
+        header {
+          padding: 1em;
+          border: 1px solid colors.$background-dark;
+        }
+
+        .body-buttons {
+          display: flex;
+          justify-content: flex-end;
+
+          a {
+            text-decoration: none;
+            padding: 8px 16px;
+            margin-top: 16px;
+            border: 1px solid colors.$background-dark;
+            background-color: colors.$background-light;
+            color: colors.$background-dark;
+
+            &:hover {
+              background-color: colors.$background-dark;
+              color: colors.$background-light;
+              transition: .4s;
+              -webkit-transition: .4s;
+              -moz-transition: .4s;
+              -ms-transition: .4s;
+              -o-transition: .4s;
+            }
+          }
+
+          button:nth-child(even) {
+            margin-left: 16px;
+            line-height: 80px;
+          }
+        }
+      }
+    }
+
+    .pagination {
+      margin-top: 24px;
+      display: flex;
+      justify-content: flex-end;
+
+      .page-item {
+        border: 1px solid colors.$background-dark !important;
+
+        &::focus {
+          box-shadow: none !important;
+          border: none !important;
+        }
+
+        a.page-link {
+          border: none;
+          color: colors.$background-dark;
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
+
+        }
+      }
+    }
   }
 
-  button {
-    margin-top: 10px;
-    @include btn-style();
+}
+
+.filter-form {
+  display: inline-block;
+  border: 1px solid colors.$background-dark;
+  padding: 8px 16px;
+  margin-bottom: 24px;
+
+  select {
+    border: none;
+
+    &:focus {
+      box-shadow: none !important;
+      outline: none !important;
+    }
   }
 }

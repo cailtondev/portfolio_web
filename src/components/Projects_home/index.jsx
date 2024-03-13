@@ -30,7 +30,7 @@ function Projects_home() {
             className="container-cards-projects-home row row-cols-sm-2
       row-cols-md-3 g-4"
           >
-            {data.map((project) => (
+            {data.slice(0, 3).map((project) => (
               <div key={project.id} className="card h-100">
                 <img
                   src={project.image_link}

@@ -1,11 +1,12 @@
 @use '../abstracts/colors';
 @use '../abstracts/variables';
 
+
 * {
-  box-sizing: border-box;
+  text-decoration: none;
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -36,6 +37,15 @@ ul {
 button,
 .btn-contact {
   border: none;
-  line-height: 1 !important;
-  padding: 10px 20px !important;
+  padding: 8px 16px !important;
+}
+
+.active {
+  background-color: colors.$background-dark !important;
+  color: colors.$background-light !important;
+
+  a {
+    background-color: colors.$background-dark !important;
+    color: colors.$background-light !important;
+  }
 }
