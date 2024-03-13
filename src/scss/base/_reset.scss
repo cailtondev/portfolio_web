@@ -10,5 +10,12 @@
 
 .bi {
   color: colors.$text-light !important;
-  /* Altere a cor para a que desejar */
+}
+
+
+button:focus,
+a:focus {
+  box-shadow: none !important;
+  // border: none !important;
+  outline: none !important;
 }
