@@ -1,10 +1,22 @@
+@use '../abstracts/colors';
+@use '../abstracts/variables';
+
+
 header.navbar {
   text-align: center;
   padding: 16px 0 8px 0;
 
-  img {
-    box-shadow:
-      20px 20px 60px #bcc1c2,
-      -20px -20px 60px #ffffff;
+  a {
+    color: colors.$text-dark;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: variables.$font-paragraph;
   }
+
+  // img {
+  //   box-shadow:
+  //     20px 20px 60px #bcc1c2,
+  //     -20px -20px 60px #ffffff;
+  // }
 }
