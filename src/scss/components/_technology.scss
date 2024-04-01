@@ -1,33 +1,18 @@
 @use '../abstracts/colors';
 @use '../abstracts/variables';
 
+
 .technology {
-  padding-top: 55px;
+  padding-top: 48px;
   padding-left: 24px;
   padding-right: 24px;
   text-align: center;
 
   .title-technology {
-    // position: relative;
-    // display: inline-block;
-
-    // &::after {
-    //   content: '';
-    //   width: 250px;
-    //   height: 4px;
-    //   position: absolute;
-    //   top: -15px;
-    //   left: 50%;
-    //   transform: translatex(-50%);
-    //   -webkit-transform: translatex(-50%);
-    //   -moz-transform: translatex(-50%);
-    //   -ms-transform: translatex(-50%);
-    //   -o-transform: translatex(-50%);
-    // }
+    margin-bottom: 32px;
   }
 
   .container-technology-icons {
-    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
 
