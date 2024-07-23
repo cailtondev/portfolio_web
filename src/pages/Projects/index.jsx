@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import useConnectApi from '../../components/useConnectApi';
+
+import Pagination from './pagination';
+import Card from './card';
+import Filter from './filter';
 
 import './style.scss';
-import useConnectApi from '../../components/useConnectApi';
 
 function Projects() {
   const { data, error } = useConnectApi('projects');
@@ -29,7 +32,6 @@ function Projects() {
 
   const indexOfLastCard = currentPage * cardsPerPage;
   const indexOfFirstCard = indexOfLastCard - cardsPerPage;
-
   const totalPages = Math.ceil(data.length / cardsPerPage);
 
   const filteredCards = selectedCategory
@@ -55,89 +57,35 @@ function Projects() {
   return (
     <>
       <section className="container projects-page">
-        <h2 className="projects-page-title">Principais trabalhos</h2>
+        <h2 className="projects-page-title">Todos os trabalhos</h2>
 
         <p className="projects-page-paragraph">
           Por padrão, os projetos estão listados na ordem em que foram
           adicionados. Utilize o filtro para organizar por categoria.
         </p>
 
-        <form className="filter-form">
-          <select value={selectedCategory} onChange={handleCategoryChange}>
-            <option value="">Todos</option>
-            <option value="#Front-End">Front-End</option>
-            <option value="#Back-End">Back-End</option>
-            <option value="#Full-Stack">Full-Stack</option>
-            <option value="#UX/UI">UX/UI</option>
-          </select>
-        </form>
+        <Filter
+          selectedCategory={selectedCategory}
+          handleCategoryChange={handleCategoryChange}
+        />
 
         {filteredCards.length === 0 && (
           <p style={{ padding: '24px 0' }}>
-            Ooops, nenhum projeto Full-Stack adicionado no momento.
+            Ooops, nenhum projeto adicionado no momento.
           </p>
         )}
 
         <div className="container-projects row">
           {filteredCards.map((project) => (
-            <div
-              key={project.id}
-              className="col-md-6 col-lg-4 body-project-card"
-            >
-              <article className="project-card">
-                <figure>
-                  <span className="category">{project.tag}</span>
-                  <img
-                    className="img-fluid"
-                    src={project.image_link}
-                    alt={project.alt_image}
-                  />
-
-                  <figcaption>
-                    Publicado em:{' '}
-                    <time>{project.created_at.substring(0, 10)}</time>.
-                  </figcaption>
-                </figure>
-
-                <header>
-                  <h2>{project.title}</h2>
-                  <p>{project.paragraph}</p>
-                </header>
-
-                <div className="body-buttons">
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={project.link_preview}
-                  >
-                    Ver o trabalho
-                  </a>
-                </div>
-              </article>
-            </div>
+            <Card key={project.id} project={project} />
           ))}
 
           {totalPages > 1 && (
-            <nav aria-label="Page navigation">
-              <ul className="pagination justify-content-end">
-                {Array.from({ length: totalPages }, (_, index) => (
-                  <li
-                    key={index}
-                    className={`page-item ${
-                      currentPage === index + 1 ? 'active' : ''
-                    }`}
-                  >
-                    <Link
-                      to={'#'}
-                      className="page-link"
-                      onClick={() => paginate(index + 1)}
-                    >
-                      {index + 1}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <Pagination
+              totalPages={totalPages}
+              currentPage={currentPage}
+              paginate={paginate}
+            />
           )}
         </div>
       </section>
