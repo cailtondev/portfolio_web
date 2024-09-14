@@ -12,7 +12,7 @@ function Contact() {
     console.error('Erro ao buscar dados da API:', error);
     return (
       <p style={{ textAlign: 'center' }}>
-        Ocorreu um erro ao buscar os dados, recarregue a página.
+        Ocorreu um erro ao buscar os dados, por favor, recarregue a página.
       </p>
     );
   }

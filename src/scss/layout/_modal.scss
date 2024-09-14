@@ -1,0 +1,23 @@
+@use '../abstracts/colors';
+
+.modal-content {
+  background-color: colors.$background-light;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+
+  .modal-header {
+    border: none !important;
+    padding: 24px 32px 0 24px;
+
+    .btn-close {
+      // background-color: red;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import useConnectApi from '../../components/useConnectApi';
 
-import Pagination from './pagination';
-import Card from './card';
-import Filter from './filter';
+import Pagination from './utils/pagination';
+import Card from './components/card';
+import Filter from './utils/filter';
 
 import './style.scss';
 
@@ -49,7 +49,7 @@ function Projects() {
     console.error('Erro ao buscar dados da API:', error);
     return (
       <p style={{ textAlign: 'center' }}>
-        Ocorreu um erro ao buscar os dados, recarregue a página.
+        Ocorreu um erro ao buscar os dados, por favor, recarregue a página.
       </p>
     );
   }
